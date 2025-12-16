@@ -19,7 +19,7 @@ GAVOT is a professional-grade cybersecurity training toolkit designed to teach:
 ## 🚀 Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/gavot.git
+git clone https://github.com/ndi-tech/Project-GAVOT.git
 cd gavot
 
 # Install dependencies
@@ -29,4 +29,5 @@ pip install -r requirements.txt
 python gavot_gui.py
 
 # Run CLI version
+
 python gavot_cli.py --help
