@@ -1,0 +1,34 @@
+# GAVOT Trojan Simulation - 20251216_005400
+# FOR EDUCATIONAL PURPOSES ONLY
+
+import os
+import sys
+import time
+import base64
+
+class TrojanSimulator:
+    def __init__(self):
+        self.version = "1.0"
+        self.author = "GAVOT Training System"
+        
+    def simulate_c2(self):
+        print("[SIM] Simulating C2 communication...")
+        time.sleep(0.5)
+        return "C2: 192.168.1.100:443"
+        
+    def simulate_persistence(self):
+        print("[SIM] Simulating persistence mechanism...")
+        return "Persistence: Registry/Run Key"
+        
+    def simulate_data_exfil(self):
+        print("[SIM] Simulating data exfiltration...")
+        data = base64.b64encode(b"Test data for exfiltration simulation").decode()
+        return f"Exfiltrated: {data}"
+
+if __name__ == "__main__":
+    print("GAVOT Trojan Simulation - Educational Use Only")
+    trojan = TrojanSimulator()
+    print(trojan.simulate_c2())
+    print(trojan.simulate_persistence())
+    print(trojan.simulate_data_exfil())
+    print("Simulation complete. This is NOT real malware.")
